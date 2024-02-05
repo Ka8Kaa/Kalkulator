@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Kalkulator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Kalkulator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="420,78,0,0" TextWrapping="Wrap" Text="Prvi broj" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="910,88,0,0" TextWrapping="Wrap" Text="Drugi broj" VerticalAlignment="Top"/>
+        <Button x:Name="btn1" Content="+" Margin="504,178,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.556,-0.531" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="-" Margin="582,177,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.556,-0.531" Click="btn2_Click"/>
+        <Button x:Name="btn3" Content="*" Margin="651,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.556,-0.531" Click="btn3_Click"/>
+        <Button x:Name="btn4" Content="/" Margin="743,174,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.556,-0.531" Click="btn4_Click"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="REZULTAT" VerticalAlignment="Top" RenderTransformOrigin="0.474,1.474" Margin="346,329,0,0"/>
+        <RadioButton x:Name="Radio1" Content="DEC" Margin="240,407,0,0" VerticalAlignment="Top" Width="26" RenderTransformOrigin="0.504,0.594" Checked="Radio1_Checked"/>
+        <RadioButton x:Name="Radio2" Content="BIN" Margin="349,409,0,0" VerticalAlignment="Top" Checked="Radio2_Checked"/>
+        <RadioButton x:Name="Radio3" Content="OCT" Margin="441,413,0,0" VerticalAlignment="Top" Checked="Radio3_Checked"/>
+        <RadioButton x:Name="Radio4" Content="HEX" Margin="585,397,0,0" VerticalAlignment="Top" Checked="Radio4_Checked"/>
+    </Grid>
+</Page>
